@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #eeeeee;
+}
+
+h1 {
+    width: 70%;
+    background: white;
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.shadow {
+    box-shadow: 0px 2px 5px 2px darkgrey;
+}
+
+.navbar {
+    position: fixed;
+    width: 180px;
+    background: white;
+    top: 200px;
+    left: 0;
+    margin: 0 20px;
+}
+
+.nav-item {
+    list-style: None;
+    margin: 20px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: None;
+    font-size: 1.4rem;
+    transition: all 400ms;
+}
+
+.nav-link:hover {
+    font-size: 1.7rem;
+}
+
+#content {
+    padding: 30px;
+    margin-left: 260px;
+}
