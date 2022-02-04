@@ -1,30 +1,45 @@
 # import necessary modules
 from bs4 import BeautifulSoup
 import requests
+import json
 
 
 # get the URL in a useable form
-url = "https://en.wikipedia.org/wiki/List_of_ursids"
+url = "https://www.w3schools.com/cssref/css_selectors.asp"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 
 # select your objects
-bears = [elem.string for elem in soup.select('th[scope=row] a')]
+table_rows = [elem for elem in soup.select('.ws-table-all tr')]
 
 
 # define filter function
 def filter_func(elem):
-    if elem == None:
-        return False
-    if ' ' in elem:
-        return True
-    return False
+    return True
 
 
 # apply filter function
-bears = list(filter(filter_func, bears))
+table_rows = list(filter(filter_func, table_rows))
 
+
+selectors = []
 
 # output
-print(bears)
+for row in table_rows:
+    cells = list(row.select('td'))
+    if cells:
+        entry = {
+            'example': cells[1].text,
+            'explanation': cells[2].text,
+        }
+        if cells[0].a:
+            entry['selector'] = cells[0].a.text
+        else:
+            entry['selector'] = cells[0].text
+
+        selectors.append(entry)
+        
+
+with open("selectors.json", 'w') as f:
+    json.dump(selectors, f)
