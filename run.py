@@ -6,6 +6,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
+
+# webscraping function
+def my_scraper():
+    # YOUR CODE GOES HERE
+
+
 # define route(s)
 @app.route("/")
 def home():
