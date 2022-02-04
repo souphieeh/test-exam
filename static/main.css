@@ -47,5 +47,32 @@ h1 {
 
 #content {
     padding: 30px;
-    margin-left: 260px;
+    margin: 0 260px;
+}
+
+
+.selector-card {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+}
+
+.card-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card-left {
+    width: 30%;
+}
+
+.card-right {
+    width: 50%;
 }
