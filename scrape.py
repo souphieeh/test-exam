@@ -15,6 +15,7 @@ table_rows = [elem for elem in soup.select('.ws-table-all tr')]
 
 
 # define filter function
+"""
 def filter_func(elem):
     return True
 
