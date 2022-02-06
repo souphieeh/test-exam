@@ -13,6 +13,11 @@ def load_selectors():
         return json.load(f)
 
 
+# webscraping function
+def my_scraper():
+    # YOUR CODE GOES HERE
+
+
 # define route(s)
 @app.route("/")
 def home():
