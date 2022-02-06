@@ -12,7 +12,7 @@ Change the `main.css` to match the following image
 
 ## Exercise 3 
 
-Open the file `scrape.py` and implement the following behavior.
+Open the file `scrape.py` and implement the following:
 
 ```python
 from bs4 import BeatifulSoup
@@ -26,9 +26,6 @@ soup = BeautifulSoup(response.content, 'html.parser')
 
 bears = [elem.string for elem in soup.select('th[scope=row] a')]
 print(bears)
-
-
-
 ```
 
 ## Exercise 4
