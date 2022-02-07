@@ -9,7 +9,6 @@ url = "https://www.w3schools.com/cssref/css_selectors.asp"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
-
 # select your objects
 table_rows = [elem for elem in soup.select('.ws-table-all tr')]
 
@@ -22,17 +21,19 @@ def filter_func(elem):
 table_rows = list(filter(filter_func, table_rows))
 
 
-# organize and output to json
+# create the structure for the json file
 selectors = []
 
-# output
 for row in table_rows:
     cells = list(row.select('td'))
     if cells:
         entry = {
+            'selector': "placeholder text, which will be overwritten below",
             'example': cells[1].text,
-            'explanation': cells[2].text,
+            'description': cells[2].text,
+            
         }
+        # we need the following code beacause not all entries in the first column are text - some are links (a-tag)
         if cells[0].a:
             entry['selector'] = cells[0].a.text
         else:
