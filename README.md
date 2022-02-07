@@ -1,4 +1,7 @@
 # Test Exam
+This is an example of what the next computer science exam will look like. The exam will be *open book*, which means that you may use any resources at your disposal: jupyter notebooks, the mini project files, the internet ...
+
+**Communication with classmates or external persons is forbidden**
 
 ## Exercise 1 (Fork the Repo - 1 P.)
 
