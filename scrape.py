@@ -15,15 +15,14 @@ table_rows = [elem for elem in soup.select('.ws-table-all tr')]
 
 
 # define filter function
-"""
 def filter_func(elem):
     return True
-
 
 # apply filter function
 table_rows = list(filter(filter_func, table_rows))
 
 
+# organize and output to json
 selectors = []
 
 # output

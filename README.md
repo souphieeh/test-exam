@@ -16,19 +16,9 @@ Change the `main.css` to match the following image
 
 2. The middle entry in the table has a CSS class. What is it called?
 
-3. Open the file `scrape.py` and implement the following.
+3. Open the file `scrape.py` and read through the code.
+- 
 
-- Change the source URL to the above website.
-- Change the selector so that all the table entries are scraped.
-- Change the output so that it writes to a text file 'output.json' instead of the console. You can use the code below as a guide.
-```
-# changes a list to the json format
-output = json.dumps(selectors)
-
-# writes to a json file
-with open("output.json", "w") as file:
-    file.write(output)
-```
 
 4. Test your code by running it using the run button. You should see a file called output.json in the left sidebar.
 
@@ -41,7 +31,7 @@ Organize the output so that each row becomes its own json entry:
     {
         "selector": "first entry of first row",
         "example":  "second entry of first row",
-        "example description": "third entry of first row",
+        "description": "third entry of first row",
     },
 
     {
