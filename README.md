@@ -16,8 +16,8 @@ Change the `main.css` to match the following image
 2. The middle entry in the table has a CSS class. What is it called?
 3. Open the file `scrape.py` and read through the code.
 3. Run the code and compare the newly created file *selectors.json* with the table on the website. What do you observe?
-4. Organize the code into three functions: `my_scraper()` should run the webscraping code and return `table_rows`; `my_filter()` should apply your filter function (for now this can be the empty filter as shown) and return `table_rows`; `write_json()` should take over the task of writing the output to the json file.
-5. Copy the three functions to the `run.py` file (somewhere near the top). Make sure the required modules are loaded at the beginning.
+4. Organize the code into three functions as defined in `run.py`: `my_scraper()` should run the webscraping code and return `table_rows`; `my_filter()` should apply your filter function (for now this can be the empty filter as shown) and return `table_rows`; `write_json()` should take over the task of writing the output to the json file.
+5. Delete `selectors.json` and run all three programs in `scrape.py`; if everything works out you should see that file reappear. Copy the three functions to the `run.py` file. Make sure any required modules are loaded at the beginning.
 
 
 ## Exercise 4 (Integrating into Your Website - 4 P.)

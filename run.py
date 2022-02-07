@@ -18,6 +18,15 @@ def my_scraper():
     # YOUR CODE GOES HERE
 
 
+# filter function
+def my_filter():
+    # YOUR CODE GOES HERE
+
+# output to json
+def write_json():
+    # YOUR CODE GOES HERE
+
+
 # define route(s)
 @app.route("/")
 def home():
