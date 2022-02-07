@@ -13,51 +13,34 @@ Change the `main.css` to match the following image
 ## Exercise 3 (Write a Webscraper - 4 P.)
 
 1. Go to the website 'https://www.w3schools.com/cssref/css_selectors.asp' and inspect the table elements. Which HTML/CSS tags do they have?
-
 2. The middle entry in the table has a CSS class. What is it called?
-
 3. Open the file `scrape.py` and read through the code.
-- 
+3. Run the code and compare the newly created file *selectors.json* with the table on the website. What do you observe?
+4. Organize the code into three functions: `my_scraper()` should run the webscraping code and return `table_rows`; `my_filter()` should apply your filter function (for now this can be the empty filter as shown) and return `table_rows`; `write_json()` should take over the task of writing the output to the json file.
+5. Copy the three functions to the `run.py` file (somewhere near the top). Make sure the required modules are loaded at the beginning.
 
 
-4. Test your code by running it using the run button. You should see a file called output.json in the left sidebar.
+## Exercise 4 (Integrating into Your Website - 4 P.)
+
+1. Add a page called `scraping.html` to your website that extends `base.html`.
+1. Add a button (link) to this page that runs the webscraping function in the background (i.e. on  clicking the link the function my_scraper() is executed). You can test this by deleting the file `selectors.json` and clicking the link. The file should be recreated.
 
 
-## Exercise 4 (Organize your Output - 3 P.)
+## Exericse 5 (Displaying your Results - 4 P.)
 
-Organize the output so that each row becomes its own json entry:
-```
-[
-    {
-        "selector": "first entry of first row",
-        "example":  "second entry of first row",
-        "description": "third entry of first row",
-    },
-
-    {
-        next row ...
-    }
-]
-```
-
-## Exercise 5
-
-- Copy the code from the webscraper into `run.py' as the function 'my_scraper()'.
-- Add a page called 'scraping.html' that extends the base template.
-- Add a button (link) to this page that runs the webscraping function in the background (i.e. on  clicking the link the function my_scraper() is executed).
-- Use the json to recreate the table from the website with your own styling.
-
-
-## Exericse 6
-
-Create a new page that extends `base.html` and displays the results from the
+1. Create a new page `results.html` that extends `base.html` and displays the results from the
 Webscraping.
+1. Play around with the display. Perhaps use `choice` to show a random selector, or create a table that shows all results in your own style.
 
-## Exericse 7
+
+## Exericse 6 (Pull Request - 1P.)
 
 Create a pull request to upstream.
 
-## Exercise 8
+## Exercise 7 (Bonus 1: Create a new Design - 2P.)
 
 Create a new branch an implement an alternative design. Create another pull
 request from this new branch.
+
+## Exercise 8 (Bonus 2: Filtering - 3P.)
+Implement a filter function on your scraping results. When finished create another pull request.
