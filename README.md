@@ -43,7 +43,7 @@ Change the `main.css` to match the following image
 
 ## Exericse 5 (Displaying your Results - 4 P.)
 
-1. Create a new page `results.html` that extends `base.html` and displays the
+1. The page `css-selectors.html` extends `base.html` and displays the
    results from the webscraping.
 1. Play around with the display. Perhaps use `choice` to show a random
    selector, or create a table that shows all results in your own style.
