@@ -34,9 +34,8 @@ Change the `main.css` to match the following image
 
 ## Exercise 4 (Integrating into Your Website - 4 P.)
 
-1. Add a page called `scraping.html` to your website that extends `base.html`.
-1. Add a button (link) to this page that runs the webscraping function in the
-   background (i.e. on  clicking the link the function my_scraper() is
+1. Add a page called `webscraping.html` to your website that extends `base.html`.
+1. Add a link on this page that runs the webscraping function (i.e. on  clicking the link the function my_scraper() is
    executed). You can test this by deleting the file `selectors.json` and
    clicking the link. The file should be recreated.
 
