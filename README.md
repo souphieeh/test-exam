@@ -21,12 +21,8 @@ Change the `main.css` to match the following image
 3. Open the file `scrape.py` and read through the code.
 3. Run the code and compare the newly created file `selectors.json` with the
    table on the website. What do you observe?
-4. Organize the code into three functions as defined in `run.py`:
-   `my_scraper()` should run the webscraping code and return `table_rows`;
-   `my_filter()` should apply your filter function (for now this can be the
-   empty filter as shown) and return `table_rows`; `write_json()` should take
-   over the task of writing the output to the json file.
-5. Delete `selectors.json` and run all three programs in `scrape.py`; if
+4. Rewrite the code as a function `my_scraper()` that does all three tasks: webscraping, filtering and writing to a json file.
+5. Delete `selectors.json` and run the program in `scrape.py`; if
    everything works out you should see that file reappear. Copy the three
    functions to the `run.py` file. Make sure any required modules are loaded at
    the beginning.
@@ -34,10 +30,11 @@ Change the `main.css` to match the following image
 
 ## Exercise 4 (Integrating into Your Website - 4 P.)
 
+1. Copy the code from `scrape.py` into `run.py` as indicated.
 1. Add a page called `webscraping.html` to your website that extends `base.html`.
-1. Add a link on this page that runs the webscraping function (i.e. on  clicking the link the function my_scraper() is
+1. Add a link on this page that runs the webscraping function (i.e. when you click the link, the function my_scraper() is
    executed). You can test this by deleting the file `selectors.json` and
-   clicking the link. The file should be recreated.
+   clicking the link. The file should then be recreated. Hint: This link should lead to a new page - I called it `success.html`.
 
 
 ## Exericse 5 (Displaying your Results - 4 P.)
