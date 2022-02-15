@@ -55,7 +55,6 @@ def my_scraper():
 
     with open("selectors.json", 'w') as f:
         json.dump(selectors, f)
-    pass
 
 
 # define route(s)
@@ -68,6 +67,10 @@ def home():
 def css_selectors():
     return render_template("css-selectors.html", selectors=load_selectors())
 
+@app.route("/webscraping")
+def webscraping():
+    my_scraper()
+    return render_template("webscraping.html")
 
 # starts the webserver
 if __name__ == "__main__":
